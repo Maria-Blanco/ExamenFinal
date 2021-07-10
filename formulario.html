@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="recursos/librerias/jquerry/jquery-3.5.1.js"></script>
+    <script src="recursos/librerias/popper/popper.min.js"></script>
+    <script src="recursos/librerias/bootstrap/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="recursos/librerias/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="recursos/CSS/todas.css">
+    <link rel="stylesheet" href="recursos/CSS/formulario.css">
+    <title>Formulario</title>
+</head>
+
+<body>
+    <header>
+        <div>
+            <!--TITULO-->
+            <h1>
+                Guías de Diseño de Personaje
+            </h1>
+        </div>
+        <!--NAVEGACION-->
+        <nav>
+            <a href="Index.html" class="link">Inicio</a>
+            <a href="formas.html">Formas</a>
+            <a href="analisis.html">Analisis de Personajes</a>
+        </nav>
+    </header>
+    <main id="principal">
+        <br>
+        <h2>¿Qué personaje te gustaría que analizaramos?</h2>
+        <br>
+        <form action="" class="was-validated">
+            <!--USER-->
+            <div class="form-group">
+                <label for="username">
+                    Nombre de Usuario
+                </label>
+                <input type="text" id="username" name="username" required class="campos">
+                <span class="red invalid-feedback">Usted no llenó este campo</span>
+            </div>
+            <br>
+            <!--MAIL-->
+            <div>
+                <label for="email">
+                    Correo Electrónico
+                </label>
+                <input type="email" id="email" name="email" required class="campos">
+                <span class="red invalid-feedback">Usted no llenó este campo</span>
+            </div>
+            <br>
+            <!--CHAR-->
+            <div>
+                <label for="personaje">
+                    Nombre del personaje
+                </label>
+                <input type="text" id="personaje" name="personaje" required class="campos">
+                <span class="red invalid-feedback">Usted no llenó este campo</span>
+            </div>
+            <br>
+            <!--ORIGIN-->
+            <div>
+                <legend>¿De qué tipo de medio proviene su personaje?</legend>
+                <input type="radio" id="occidental" name="media" value="oc" required>
+                <label for="occidental">Animación Occidental</label>
+                <br>
+                <input type="radio" id="oriental" name="media" value="or" required>
+                <label for="oriental">Animación Oriental</label>
+                <br>
+                <input type="radio" id="liveAction" name="media" value="la" required>
+                <label for="liveAction">Acción real</label>
+                <span class="red invalid-feedback">Usted no llenó este campo</span>
+            </div>
+            <br>
+            <button type="submit" class="btn btn-primary enviar">Enviar</button>
+            <button type="reset" class="btn btn-primary cancelar">Cancelar</button>
+        </form>
+    </main>
+    <footer class="link">
+        <a href="Index.html">Inicio</a>
+        <a href="#principal">Arriba</a>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,95 @@
+body>header>section {
+    display: flex;
+    width: 99.3%;
+    height: 70px;
+    background-color: #1d1c41;
+    align-content: center;
+    justify-content: center;
+    color: #ffffff;
+    padding: 0px;
+}
+
+.opcionT1 {
+    display: table-cell;
+    justify-self: center;
+    padding: 0%;
+    font-size: large;
+}
+
+.opcionT2 {
+    display: table-cell;
+    justify-self: center;
+    padding: 0%;
+    font-size: large;
+}
+
+.opcionT3 {
+    display: table-cell;
+    justify-self: center;
+    padding: 0%;
+    font-size: large;
+}
+
+.imagen {
+    display: flex;
+    justify-content: center;
+}
+
+div {
+    background-color: rgba(147, 172, 191, 0.74);
+    width: 80%;
+    justify-self: center;
+    margin-left: 9.65%;
+    padding: 1px;
+}
+
+.tabla1 {
+    display: none;
+}
+
+.tabla2 {
+    display: none;
+}
+
+.tabla3 {
+    display: none;
+}
+
+a {
+    text-decoration: none;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #1d1c41;
+}
+
+a:hover {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+img {
+    justify-self: center;
+}
+
+section>ul {
+    display: table;
+    background-color: #6f879bbd;
+    width: 80%;
+    list-style-type: none;
+    padding: 1px;
+    text-align: center;
+    margin-left: 9.65%;
+    margin-bottom: 0;
+}
+
+nav a {
+    font-size: x-large;
+}
+
+section section div:nth-child(2){
+    display: inline-block;
+}
+
+section section ul li:nth-child(1){
+    color: #ffffff;
+    background-color: steelblue;
+}

@@ -1,0 +1,146 @@
+    #indice {
+        display: table-cell;
+        width: 30%;
+        height: 100%;
+        background-color: rgba(147, 172, 191, 0.438);
+        margin-right: 0px;
+        justify-self: right;
+        align-self: stretch;
+    }
+    
+    #principal {
+        display: table-cell;
+        width: 69%;
+        height: 100%;
+        vertical-align: top;
+        margin: 0px;
+        padding-top: 17px;
+    }
+    
+    body>section {
+        display: table;
+        background: url("../Imagenes/pattern.jpg") repeat;
+        width: 100%;
+        padding: none;
+        margin: 0px;
+        size: auto;
+    }
+    
+    img {
+        display: block;
+        margin: 7%;
+        height: 85%;
+        width: 85%;
+    }
+    
+    #indice>div>a {
+        margin-left: 10px;
+        font-size: 20px;
+        color: #1d1c41;
+        display: flexbox;
+        width: 50%;
+    }
+    
+    #indice>div>a:hover {
+        color: #61789e;
+        font-weight: bold;
+        font-size: x-large;
+    }
+    
+    #principal>article>section>a>h2 {
+        color: black;
+    }
+    
+    #principal>article>section>h2 {
+        color: black;
+    }
+    
+    #principal>article>section>a>h2:hover {
+        color: #61789e;
+        font-weight: bolder;
+        font-size: xx-large;
+    }
+    
+    img:hover {
+        border: 2px solid rgb(22, 22, 90);
+    }
+    
+    .meVes {
+        display: block;
+    }
+    
+    .noMeVes {
+        display: none;
+    }
+    
+    .verMas {
+        background-color: #61789e;
+        color: white;
+        width: 25%;
+        margin-left: 40%;
+        display: none;
+        border-radius: 10%;
+        font-size: large;
+        text-align: center;
+    }
+    /*Responsive Index*/
+    
+    @media all and (max-width: 720px) {
+        section nav {
+            width: 100%;
+            height: 80%;
+        }
+        #indice {
+            display: inline-flex;
+            width: 100%;
+        }
+        nav div {
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            justify-content: space-around;
+        }
+        #principal {
+            display: block;
+            width: 100%
+        }
+        nav div a {
+            width: 20%;
+            height: 100%;
+        }
+        nav div a p {
+            width: 70%;
+            margin: 0px;
+            display: inline-block;
+        }
+        img {
+            width: 80%;
+            margin: 10%;
+            margin-top: 7%;
+            margin-bottom: 7%;
+        }
+    }
+    
+    @media all and (max-width: 600px) {
+        #indice {
+            display: block;
+        }
+        #indice div a img {
+            display: none;
+        }
+        #indice div a p {
+            margin: 1%;
+            text-align: center;
+            font-size: x-large;
+            font-weight: bolder;
+        }
+        .meVes {
+            display: none;
+        }
+        .noMeVes {
+            display: block;
+        }
+        .verMas {
+            display: block;
+        }
+    }

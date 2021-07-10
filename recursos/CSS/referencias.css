@@ -1,0 +1,13 @@
+main {
+    text-align: center;
+}
+
+@media all and (max-width: 600px) {
+    table {
+        font-size: x-small;
+        padding: 0%;
+    }
+    h2 {
+        font-size: large;
+    }
+}

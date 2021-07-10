@@ -1,0 +1,251 @@
+#secciones >h2{
+        margin-bottom: 10px;
+}
+#secciones >ul{
+        margin-bottom: 0px;
+}
+
+main > div > a { 
+        display: inline-block;
+        text-decoration: none;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        color: #1d1c41;
+        width: 20%;
+        text-align: center;
+        margin-left: 40%;
+        margin-bottom: 10px;
+        padding: 5px;
+        background-color: whitesmoke;
+        border: 2px solid rgb(14, 14, 41);
+        font-weight: 600;
+    }
+    
+main > div > a:hover { 
+        color: whitesmoke;
+        font-weight: bold;
+        font-size: large;
+        background-color: rgb(14, 14, 41);
+        border-color: #61789e;
+}
+
+.contenedor{
+  background-color: transparent;
+  width: 495px;
+  height: 308px;
+  perspective: 1000px;
+  margin-left: 30%;
+  margin-bottom: 30px;
+}
+
+.contenedorInside {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  box-shadow: 2px 5px 7px black;
+}
+
+.bigImg {
+        align-self: flex-end;
+        justify-self: flex-end;
+        margin-right: 10%;
+}
+
+.front {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        background-color: whitesmoke;
+        display: flex;
+}
+
+.charName {
+        margin-bottom: 0px;
+        align-self: flex-start;
+        margin-left: 30px;
+        margin-top: 30px;
+        width: 184px;
+}
+
+.back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        background-color: whitesmoke;
+  color: rgb(14, 14, 41);
+  transform: rotateY(180deg);
+}
+
+.bannerInfo {
+        display: flex;
+        border-bottom: 5px solid rgb(14, 14, 41);
+        padding-bottom: 3px;
+}
+
+.colorName {
+        align-self: flex-end;
+        margin-left: 40%;
+        margin-right: 30px;
+        background-color: rgb(14, 14, 41);
+        padding: 7px;
+        color: whitesmoke;
+}
+
+.showName {
+        padding-top: 7px;
+}
+
+.smallImg {
+        width: 34%;
+        margin-top: 10px;
+        border: 2px solid rgb(14, 14, 41);
+        background-color: skyblue;
+        margin-left: 30px;
+}
+
+.cardInfoChar {
+        display: flex;
+}
+
+.cardInfoList{
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+}
+
+h3{
+        margin-left: 20px;
+        margin-bottom: 0px;
+}
+
+.list {
+        font-size: large;
+}
+
+.contenedor:hover .contenedorInside {
+        transform: rotateY(180deg);
+      }
+
+section{
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+}
+
+.meVes {
+        flex-direction: column;
+        display: flex;
+}
+.noMeVes {
+        display: none;
+}
+
+.vermasboton {
+        display: none;
+}
+
+#imgHoverOver{
+        display: flex;
+        flex-direction: row;
+        margin-top: 20px;
+        width: 50%;
+        justify-content: center;
+        margin-left: 25%;
+        margin-right: 25%;
+        background-color: whitesmoke;
+        border: 2px solid lavender;
+        padding: 10px;
+}
+#imgHoverOver >h3{
+        align-self: center;
+        margin-right: 10px;
+}
+
+#imgHoverOver >img{
+        width: 20%;
+}
+
+@media only screen and (max-width: 760px){
+.contenedor {
+        height: 495px;
+        width: 308px;  
+}
+.bigImg{
+        height: 60%;
+        width: auto;
+        margin: 0px;
+        justify-self: center;
+        align-self: center;
+        margin-top: 35%;
+}
+.front {
+        flex-direction: column;
+}
+.cardInfoChar {
+        flex-direction: column;
+}
+.colorName {
+        margin-left: 10%;
+}
+.showName {
+        margin-left: 20px;
+}
+#imgHoverOver >img{
+        width: 25%;
+}
+#imgHoverOver{
+        width: 60%;
+        margin-left: 20%;
+        margin-right: 20%;
+}
+}
+
+@media only screen and (max-width: 600px){
+.contenedor {
+        height: 300px;
+        width: 300px;  
+        margin-left: 25%;
+}
+.smallImg {
+        display: none;
+}
+.bigImg{
+        height: 75%;
+        width: auto;
+        margin: 0px;
+        justify-self: center;
+        align-self: center;
+        margin-top: 5%;
+}
+.meVes {
+        display: none;
+}
+.noMeVes {
+        display: flex;
+        flex-direction: column;
+}
+main > div > a {
+        margin-left: 20%;
+}
+.vermasboton {
+        display: inline-block;
+}
+#imgHoverOver >img{
+        width: 30%;
+}
+#imgHoverOver{
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+}
+#imgHoverOver >h3{
+        align-self: center;
+        margin-right: 10px;
+        font-size: large;
+}
+}
